@@ -1,40 +1,101 @@
 * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
-.add_task{
-    max-width: 80%;
-    margin: 10px auto;
-    display: flex;
-    justify-content: flex-end;
+.add_task {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: flex-end;
 }
-.logo_container{
-    width: 90%;
-    margin: 0 auto;
+.logo_container {
+  width: 90%;
+  margin: 0 auto;
 }
-.logo{
-    display: flex;
-    align-items: center;
+.logo {
+  display: flex;
+  align-items: center;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tasks_operations{
 
+.tasks_operations {
+  background-color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 800px;
 }
-.add_task_button{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    gap: 5px;
-    border-radius: 99999px;
-    border: none;
-    cursor: pointer;
-    font-size: 10px;
-    background-color: #152A74;
-    font-weight: 700;
-    color: white;
+
+.pending {
+  background-color: #14a3f36b;
+  color: #14a3f3;
+  border: 1px solid #14a3f3;
+}
+
+.status {
+  font-size: 12px;
+  width: fit-content;
+  margin: 0 auto;
+  font-weight: 700;
+  padding: 3px 10px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border-radius: 99999px;
+}
+
+.header{
+    background-color: #EFF5FD;
+}
+
+th,
+td {
+  padding: 10px;
+}
+tr:hover {
+  background-color: #EFF5FD;
+}
+
+.pending > div.ellipsis {
+  background-color: #14a3f3;
+}
+
+.completed > div.ellipsis {
+  background-color: #10a64a;
+}
+
+.completed {
+  background-color: #63dc926b;
+  color: #10a64a;
+  border: 1px solid #10a64a;
+}
+td {
+  text-align: center;
+}
+div.ellipsis {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.add_task_button {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  border-radius: 99999px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 10px;
+  background-color: #152a74;
+  font-weight: 700;
+  color: white;
 }
